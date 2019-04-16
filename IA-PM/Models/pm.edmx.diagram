@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e5040bb24a914c34af604c4953a83a72" Name="Diagram1">
+        <EntityTypeShape EntityType="IAModel.project" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="IAModel.user" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="IAModel.usertype" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <AssociationConnector Association="IAModel.FK__projects__Custom__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="IAModel.FK__projects__MD__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="IAModel.FK__projects__MT__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="IAModel.FK__projects__MTL__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="IAModel.FK__users__usertype__3B75D760" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
