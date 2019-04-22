@@ -14,20 +14,27 @@ namespace IA_PM.Models
     
     public partial class project
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public project()
+        {
+            this.hirings = new HashSet<hiring>();
+            this.Teams = new HashSet<Team>();
+        }
+    
         public int Id { get; set; }
         public string name { get; set; }
         public string descreption { get; set; }
         public System.DateTime date { get; set; }
         public Nullable<bool> status { get; set; }
         public Nullable<double> price { get; set; }
-        public int MD { get; set; }
-        public int MTL { get; set; }
-        public int MT { get; set; }
         public int Customer { get; set; }
+        public Nullable<int> progressid { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<hiring> hirings { get; set; }
+        public virtual Progress Progress { get; set; }
         public virtual user user { get; set; }
-        public virtual user user1 { get; set; }
-        public virtual user user2 { get; set; }
-        public virtual user user3 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Team> Teams { get; set; }
     }
 }

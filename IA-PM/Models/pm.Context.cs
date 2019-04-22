@@ -13,10 +13,10 @@ namespace IA_PM.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class IAEntities1 : DbContext
+    public partial class IAEn : DbContext
     {
-        public IAEntities1()
-            : base("name=IAEntities1")
+        public IAEn()
+            : base("name=IAEn")
         {
         }
     
@@ -25,7 +25,12 @@ namespace IA_PM.Models
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<hiring> hirings { get; set; }
+        public virtual DbSet<Progress> Progresses { get; set; }
         public virtual DbSet<project> projects { get; set; }
+        public virtual DbSet<projRequest> projRequests { get; set; }
+        public virtual DbSet<request> requests { get; set; }
+        public virtual DbSet<Team> Teams { get; set; }
         public virtual DbSet<user> users { get; set; }
         public virtual DbSet<usertype> usertypes { get; set; }
     }

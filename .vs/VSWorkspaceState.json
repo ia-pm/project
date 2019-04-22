@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\IA-PM"
+    "\\IA-PM",
+    "\\IA-PM\\Controllers",
+    "\\IA-PM\\Views",
+    "\\IA-PM\\Views\\Shared"
   ],
-  "SelectedNode": "\\IA-PM.sln",
+  "SelectedNode": "\\IA-PM\\Controllers",
   "PreviewInSolutionExplorer": false
 }

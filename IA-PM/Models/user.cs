@@ -17,10 +17,9 @@ namespace IA_PM.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public user()
         {
+            this.hirings = new HashSet<hiring>();
             this.projects = new HashSet<project>();
-            this.projects1 = new HashSet<project>();
-            this.projects2 = new HashSet<project>();
-            this.projects3 = new HashSet<project>();
+            this.Teams = new HashSet<Team>();
         }
     
         public int Id { get; set; }
@@ -34,13 +33,11 @@ namespace IA_PM.Models
         public int usertype { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<hiring> hirings { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<project> projects { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<project> projects1 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<project> projects2 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<project> projects3 { get; set; }
+        public virtual ICollection<Team> Teams { get; set; }
         public virtual usertype usertype1 { get; set; }
     }
 }
