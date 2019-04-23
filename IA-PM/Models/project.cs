@@ -18,23 +18,25 @@ namespace IA_PM.Models
         public project()
         {
             this.hirings = new HashSet<hiring>();
-            this.Teams = new HashSet<Team>();
+            this.projrequests = new HashSet<projrequest>();
+            this.teams = new HashSet<team>();
         }
     
         public int Id { get; set; }
         public string name { get; set; }
         public string descreption { get; set; }
-        public System.DateTime date { get; set; }
-        public Nullable<bool> status { get; set; }
+        public Nullable<System.DateTime> date { get; set; }
+        public bool status { get; set; }
         public Nullable<double> price { get; set; }
-        public int Customer { get; set; }
-        public Nullable<int> progressid { get; set; }
+        public int progressid { get; set; }
+        public int customerid { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<hiring> hirings { get; set; }
-        public virtual Progress Progress { get; set; }
-        public virtual user user { get; set; }
+        public virtual progress progress { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Team> Teams { get; set; }
+        public virtual ICollection<projrequest> projrequests { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<team> teams { get; set; }
     }
 }

@@ -12,12 +12,13 @@ namespace IA_PM.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class projRequest
+    public partial class projrequest
     {
         public int Id { get; set; }
         public int projectid { get; set; }
-        public Nullable<int> statuid { get; set; }
+        public int progressid { get; set; }
     
-        public virtual Progress Progress { get; set; }
+        public virtual progress progress { get; set; }
+        public virtual project project { get; set; }
     }
 }

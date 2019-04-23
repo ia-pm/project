@@ -195,19 +195,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>pm.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\Progress.cs">
+    <Compile Include="Models\progress.cs">
       <DependentUpon>pm.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\project.cs">
       <DependentUpon>pm.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\projRequest.cs">
+    <Compile Include="Models\projrequest.cs">
       <DependentUpon>pm.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\request.cs">
       <DependentUpon>pm.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Team.cs">
+    <Compile Include="Models\team.cs">
       <DependentUpon>pm.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\user.cs">

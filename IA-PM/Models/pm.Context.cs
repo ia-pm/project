@@ -26,12 +26,12 @@ namespace IA_PM.Models
         }
     
         public virtual DbSet<hiring> hirings { get; set; }
-        public virtual DbSet<Progress> Progresses { get; set; }
         public virtual DbSet<project> projects { get; set; }
-        public virtual DbSet<projRequest> projRequests { get; set; }
-        public virtual DbSet<request> requests { get; set; }
-        public virtual DbSet<Team> Teams { get; set; }
-        public virtual DbSet<user> users { get; set; }
         public virtual DbSet<usertype> usertypes { get; set; }
+        public virtual DbSet<progress> progresses { get; set; }
+        public virtual DbSet<projrequest> projrequests { get; set; }
+        public virtual DbSet<request> requests { get; set; }
+        public virtual DbSet<team> teams { get; set; }
+        public virtual DbSet<user> users { get; set; }
     }
 }

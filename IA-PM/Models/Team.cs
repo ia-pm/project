@@ -12,11 +12,11 @@ namespace IA_PM.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Team
+    public partial class team
     {
         public int Id { get; set; }
         public int projectid { get; set; }
-        public Nullable<int> userid { get; set; }
+        public int userid { get; set; }
     
         public virtual project project { get; set; }
         public virtual user user { get; set; }

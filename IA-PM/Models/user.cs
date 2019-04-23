@@ -18,8 +18,7 @@ namespace IA_PM.Models
         public user()
         {
             this.hirings = new HashSet<hiring>();
-            this.projects = new HashSet<project>();
-            this.Teams = new HashSet<Team>();
+            this.teams = new HashSet<team>();
         }
     
         public int Id { get; set; }
@@ -27,17 +26,15 @@ namespace IA_PM.Models
         public string Lname { get; set; }
         public string email { get; set; }
         public string job_desc { get; set; }
-        public string mobile { get; set; }
         public byte[] photo { get; set; }
         public string password { get; set; }
         public int usertype { get; set; }
+        public string mobile { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<hiring> hirings { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<project> projects { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Team> Teams { get; set; }
+        public virtual ICollection<team> teams { get; set; }
         public virtual usertype usertype1 { get; set; }
     }
 }

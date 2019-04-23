@@ -20,7 +20,7 @@ namespace IA_PM.Models
         public int projectid { get; set; }
     
         public virtual project project { get; set; }
-        public virtual request request { get; set; }
-        public virtual user user { get; set; }
+        public virtual request request1 { get; set; }
+        public virtual user user1 { get; set; }
     }
 }

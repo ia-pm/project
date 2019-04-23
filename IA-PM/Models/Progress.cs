@@ -12,13 +12,13 @@ namespace IA_PM.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Progress
+    public partial class progress
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Progress()
+        public progress()
         {
             this.projects = new HashSet<project>();
-            this.projRequests = new HashSet<projRequest>();
+            this.projrequests = new HashSet<projrequest>();
         }
     
         public int Id { get; set; }
@@ -27,6 +27,6 @@ namespace IA_PM.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<project> projects { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<projRequest> projRequests { get; set; }
+        public virtual ICollection<projrequest> projrequests { get; set; }
     }
 }

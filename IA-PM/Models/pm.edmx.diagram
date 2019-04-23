@@ -4,24 +4,24 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="cd3c7f1698ef45ccb0b38eb98e1d42cd" Name="Diagram1">
+      <Diagram DiagramId="cd3c7f1698ef45ccb0b38eb98e1d42cd" Name="Diagram1" ZoomLevel="86">
         <EntityTypeShape EntityType="IAModel.hiring" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="IAModel.Progress" Width="1.5" PointX="6" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="IAModel.project" Width="1.5" PointX="8.25" PointY="3.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="IAModel.projRequest" Width="1.5" PointX="8.25" PointY="7.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="IAModel.request" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="IAModel.Team" Width="1.5" PointX="10.5" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="IAModel.user" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="IAModel.usertype" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="IAModel.project" Width="1.5" PointX="7.625" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="IAModel.usertype" Width="1.5" PointX="3.125" PointY="1.375" IsExpanded="true" />
         <AssociationConnector Association="IAModel.FK__hiring__projecti__5AEE82B9" ManuallyRouted="false" />
-        <AssociationConnector Association="IAModel.FK__hiring__requesti__59FA5E80" ManuallyRouted="false" />
-        <AssociationConnector Association="IAModel.FK__hiring__userid__59063A47" ManuallyRouted="false" />
-        <AssociationConnector Association="IAModel.FK__projects__progre__5441852A" ManuallyRouted="false" />
-        <AssociationConnector Association="IAModel.FK__projReque__statu__5DCAEF64" ManuallyRouted="false" />
-        <AssociationConnector Association="IAModel.FK__projects__Custom__3F466844" ManuallyRouted="false" />
-        <AssociationConnector Association="IAModel.FK__Team__projectid__52593CB8" ManuallyRouted="false" />
-        <AssociationConnector Association="IAModel.FK__Team__userid__534D60F1" ManuallyRouted="false" />
-        <AssociationConnector Association="IAModel.FK__users__usertype__3B75D760" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="IAModel.progress" Width="1.5" PointX="7.875" PointY="0.75" />
+        <EntityTypeShape EntityType="IAModel.projrequest" Width="1.5" PointX="10" PointY="2.125" />
+        <EntityTypeShape EntityType="IAModel.request" Width="1.5" PointX="5.625" PointY="0.875" />
+        <EntityTypeShape EntityType="IAModel.team" Width="1.5" PointX="10.5" PointY="4.25" />
+        <EntityTypeShape EntityType="IAModel.user" Width="1.5" PointX="3.125" PointY="3.125" />
+        <AssociationConnector Association="IAModel.FK__hiring__requesti__403A8C7D" />
+        <AssociationConnector Association="IAModel.FK__hiring__userid__3E52440B" />
+        <AssociationConnector Association="IAModel.FK__projects__progre__440B1D61" />
+        <AssociationConnector Association="IAModel.FK__projreque__progr__4316F928" />
+        <AssociationConnector Association="IAModel.FK__projreque__proje__33D4B598" />
+        <AssociationConnector Association="IAModel.FK__team__projectid__37A5467C" />
+        <AssociationConnector Association="IAModel.FK__team__userid__38996AB5" />
+        <AssociationConnector Association="IAModel.FK__user__usertype__276EDEB3" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
