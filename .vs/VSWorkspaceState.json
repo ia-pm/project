@@ -2,10 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\IA-PM",
+    "\\IA-PM\\App_Data",
+    "\\IA-PM\\App_Start",
     "\\IA-PM\\Controllers",
+    "\\IA-PM\\Models",
     "\\IA-PM\\Views",
     "\\IA-PM\\Views\\Shared"
   ],
-  "SelectedNode": "\\IA-PM\\Controllers\\MDController.cs",
+  "SelectedNode": "\\IA-PM\\App_Data\\aspnet-IA-PM-20190408114732.mdf",
   "PreviewInSolutionExplorer": false
 }
